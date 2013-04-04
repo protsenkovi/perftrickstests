@@ -201,14 +201,14 @@ void dynamicArrayBoundsTest() {
 
 	free(vec);
 
-	FILE *file = freopen("Tests/dynamic for boundaries o2 one malloc with fill avg3.txt", "wt", stdout);
-	printf("%f stencil simple\n", cpu2time(Ax_GET(0)));
-	printf("%f stencil dynamic m=n=p\n", cpu2time(Ax_GET(1)));
-	printf("%f stencil dynamic i > k without sort\n", cpu2time(Ax_GET(2)));
-	printf("%f stencil dynamic i > k with sort\n", cpu2time(Ax_GET(3)));	
-	printf("%f stencil dynamic m=n=p unroll without sort\n", cpu2time(Ax_GET(4)));
-	printf("%f stencil dynamic i > k unroll without sort\n", cpu2time(Ax_GET(5)));
-	printf("%f stencil dynamic i > k unroll with sort\n", cpu2time(Ax_GET(6)));
+	FILE *file = freopen("Tests/dynamic for boundaries o2 one malloc with fill min1.txt", "wt", stdout);
+	printf("%f stencil simple\n", cpu2time(Ax_GET_MIN(0)));
+	printf("%f stencil dynamic m=n=p\n", cpu2time(Ax_GET_MIN(1)));
+	printf("%f stencil dynamic i > k without sort\n", cpu2time(Ax_GET_MIN(2)));
+	printf("%f stencil dynamic i > k with sort\n", cpu2time(Ax_GET_MIN(3)));	
+	printf("%f stencil dynamic m=n=p unroll without sort\n", cpu2time(Ax_GET_MIN(4)));
+	printf("%f stencil dynamic i > k unroll without sort\n", cpu2time(Ax_GET_MIN(5)));
+	printf("%f stencil dynamic i > k unroll with sort\n", cpu2time(Ax_GET_MIN(6)));
 	fclose(file);
 }
 
