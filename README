@@ -1,0 +1,5 @@
+Perfomance Tricks Tests
+
+Trying to implement some trick (e.g. loop unrolling, virtual streams) and analyze it.
+
+Contains tests from Visual Studio 2012 project.
